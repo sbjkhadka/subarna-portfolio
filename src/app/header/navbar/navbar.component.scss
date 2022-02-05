@@ -1,0 +1,56 @@
+// font-family: 'Fira Sans', sans-serif;
+// font-family: 'Love Light', cursive;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Orelega One', cursive;
+// font-family: 'Staatliches', cursive;
+.header-scrolling {
+    background-color: #12002F;
+    .container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+.header-default {
+    background-color: transparent;
+    .container {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+header {
+    // background-color: #12002F;
+    color: #FFF;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    .container {
+        // padding-top: 32px;
+        // padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        h2 {
+            color: inherit;
+            text-transform: uppercase;
+            font-size: 32px;
+            font-weight: 900;
+            span {
+                font-weight: 600;;
+            }
+        }
+        nav {
+            width: 500px;
+            display: grid;
+            grid-gap: 16px;
+            grid-template-columns: repeat(5, auto);
+            a{
+                color: inherit;
+                font-size: 16px;
+                text-decoration: none;
+            }
+        }
+    }
+}
