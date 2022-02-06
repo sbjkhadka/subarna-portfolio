@@ -3,6 +3,7 @@
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'Orelega One', cursive;
 // font-family: 'Staatliches', cursive;
+
 .header-scrolling {
     background-color: #12002F;
     .container {
@@ -26,19 +27,19 @@ header {
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     .container {
-        // padding-top: 32px;
-        // padding-bottom: 32px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
         h2 {
             color: inherit;
             text-transform: uppercase;
             font-size: 32px;
             font-weight: 900;
+              @media (max-width: 767px) {
+                font-size: 18px;
+            }
             span {
-                font-weight: 600;;
+                font-weight: 600;
             }
         }
         nav {
@@ -46,6 +47,9 @@ header {
             display: grid;
             grid-gap: 16px;
             grid-template-columns: repeat(5, auto);
+            @media (max-width: 767px) {
+                display: none;
+            }
             a{
                 color: inherit;
                 font-size: 16px;
