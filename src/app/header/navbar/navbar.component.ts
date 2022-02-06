@@ -1,4 +1,5 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
+import { Social } from 'src/app/Models/social.interface';
 
 @Component({
   selector: 'app-navbar',
