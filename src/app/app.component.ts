@@ -8,7 +8,7 @@ import { Social } from './Models/social.interface';
 })
 export class AppComponent {
   title = 'subarna-portfolio';
-  socialIds: any= {
+  socialIds: Social= {
     github: 'https://github.com/sbjkhadka',
     linkedIn: 'https://www.linkedin.com/in/subarnabkhadka',
     instagram: 'https://www.instagram.com/subarnabj',

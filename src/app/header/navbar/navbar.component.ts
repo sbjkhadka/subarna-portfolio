@@ -1,5 +1,4 @@
-import { Component, HostListener, Input, OnInit } from '@angular/core';
-import { Social } from 'src/app/Models/social.interface';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -18,7 +17,6 @@ export class NavbarComponent implements OnInit {
   scrollFunction() {
     if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       this.scrolling = true;
-      
     } else {
       this.scrolling = false;
     }
@@ -30,5 +28,4 @@ export class NavbarComponent implements OnInit {
       window.location.hash = '';
     }
   }
-
 }
