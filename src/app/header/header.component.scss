@@ -29,12 +29,12 @@ main {
       z-index: 1;
       text-align: right;
       font-family: "Open Sans", sans-serif;
-      div {
-          @media (min-width: 821px) {
+      div.line-break {
+        @media (min-width: 821px) {
           display: none;
         }
       }
-      div {
+      div.line-break {
         @media (max-width: 1205px) {
           display: block;
         }
@@ -57,6 +57,26 @@ main {
         font-weight: 400;
         @media (max-width: 767px) {
           font-size: 24px;
+        }
+      }
+      div.social-icons {
+        font-size: 32px;
+        width: 15%;
+        display: inline-flex;
+        justify-content: space-around;
+        cursor: pointer;
+        .fa:hover {
+          color: #ff9fdb;
+          transition: color 1s ease;
+        }
+        @media (max-width: 1205px) {
+          width: 25%;
+        }
+        @media (max-width: 767px) {
+          width: 50%;
+        }
+        @media (max-width: 400px) {
+          width: 100%;
         }
       }
     }
