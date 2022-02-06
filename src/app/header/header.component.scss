@@ -80,6 +80,24 @@ main {
         }
       }
     }
+    i.down-arrow {
+      position: absolute;
+      bottom:20px;
+      left:50%;
+      background-color: #ff9fdb;
+      color: #fff;
+      z-index: 2;
+      padding: 15px;
+      cursor: pointer;
+      transition: color 2s ease;
+      transition: background-color 3s ease;
+    };
+    i.down-arrow:hover {
+      background-color: #fff;
+      color: #ff9fdb;
+      transition: color 3s ease;
+      transition: background-color 1s ease;
+    }
   }
 }
 
