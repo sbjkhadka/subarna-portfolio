@@ -67,7 +67,7 @@ main {
         cursor: pointer;
         .fa:hover {
           color: #ff9fdb;
-          transition: color 1s ease;
+          transition: color 0.5s linear;
         }
         @media (max-width: 1205px) {
           width: 25%;
@@ -89,14 +89,14 @@ main {
       z-index: 2;
       padding: 15px;
       cursor: pointer;
-      transition: color 2s ease;
-      transition: background-color 3s ease;
+      transition: color 2s linear;
+      transition: background-color 3s linear;
     };
     i.down-arrow:hover {
       background-color: #fff;
       color: #ff9fdb;
       transition: color 3s ease;
-      transition: background-color 1s ease;
+      transition: background-color 1s linear;
     }
   }
 }
