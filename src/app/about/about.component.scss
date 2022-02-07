@@ -1,0 +1,13 @@
+a.download-button {
+    background-color: #D3D3D3;
+    color: #000;
+    font-weight: 600;
+}
+
+a.download-button:hover {
+    background-color: #000;
+    color: #FFF;
+    font-weight: 600;
+    transition: color 0.5s linear;
+    transition: background-color 1s linear;
+}
