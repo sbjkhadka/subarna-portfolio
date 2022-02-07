@@ -1,0 +1,56 @@
+.container-fluid {
+  .row {
+    .contact-form {
+      height: 200px;
+      position: relative;
+      background-color: #191919;
+      color: #FFF;
+      i.up-arrow {
+        position: absolute;
+        bottom: -20px;
+        left: 49%;
+        background-color: #FFF;
+        z-index: 2;
+        padding: 15px;
+        cursor: pointer;
+        transition: color 0.5s ease;
+        transition: background-color 0.5s ease;
+      }
+      i.up-arrow:hover {
+        background-color: #999999;
+        color: #000;
+        transition: color 0.5s ease;
+        transition: background-color 0.5s ease;
+      }
+    }
+    .social-section {
+      height: 130px;
+      padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #0F0F0F;
+      .social-icons {
+        font-size: 32px;
+        width: 18%;
+        display: inline-flex;
+        justify-content: space-around;
+        cursor: pointer;
+        .fa:hover {
+          color: #FFF;
+          transition: color 0.5s linear;
+        }
+        @media (max-width: 1205px) {
+          width: 25%;
+        }
+        @media (max-width: 767px) {
+          width: 50%;
+        }
+        @media (max-width: 400px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

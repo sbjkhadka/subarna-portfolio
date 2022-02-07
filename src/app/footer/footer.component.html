@@ -1,3 +1,24 @@
-<h1>
-  footer works!
-</h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 contact-form">
+      form here
+      <i class="up-arrow fa fa-chevron-up rounded-circle text-muted" routerLink="/home" fragment="home"></i>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 social-section">
+      <div class="social-icons" *ngIf="social">
+        <a [href] = "social.github" class="text-muted"><i class="fa fa-6x fa-github-square"></i></a>
+        <a [href] = "social.linkedIn" class="text-muted"><i class="fa fa-6x fa-linkedin-square"></i></a>
+        <a [href] = "social.instagram" class="text-muted"><i class="fa fa-6x fa-instagram"></i></a>
+        <a [href] = "social.facebook" class="text-muted"><i class="fa fa-facebook-square"></i></a>
+        <a [href] = "social.twitter" class="text-muted"><i class="fa fa-6x fa-twitter-square"></i></a>
+      </div>
+      <div class="copyright text-muted">
+        &copy; Copyright {{year}} {{name}}
+      </div>
+    </div>
+  </div>
+</div>
