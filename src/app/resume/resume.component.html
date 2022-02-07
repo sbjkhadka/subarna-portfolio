@@ -1,3 +1,161 @@
-<h1>
-  resume works!
-</h1>
+<div class="w-100 my-3">
+  <div class="container py-3">
+    <div class="row">
+      <div class="col-md-3 main-text">
+        <h3 class="text-dark underline">Education</h3>
+      </div>
+      <div class="col-md-9 main-text">
+        <h4>Centennial College, <br />Toronto, ON</h4>
+        <p><i>Software Engineering Technology (2021)</i> &bull; GPA: 4.4/4.5</p>
+      
+          <ul class="text-muted">
+            <li>Recipent of CCSAI Academic Merit Scholarship (2021)</li>
+            <li>Recipent of Centennial College Retiree’s Association Memorial Scholarship for achieving high academic standings (2020)</li>
+          </ul>
+
+          <strong>Relevant Courses</strong>
+          <ul class="relavant-courses">
+            <li> Web Interface Design</li>
+            <li> Client-Side Web Development</li>
+            <li> Web Application Development</li>
+            <li> Object Oriented Programming</li>
+            <li> Data Structure and Algorithms</li>
+            <li> API Engineering </li>
+          </ul>
+
+          <strong>Capstone Project</strong>
+          <ul>
+            <li>Project Title: Grocery List Generator (MEAN Stack)</li>
+            <li>Contributed to developing API endpoints and designing database using Mongo DB Compass, 
+              developed services and components in the angular frontend using HTTP Client, 
+              Angular Material, Angular routing, RxJS, and ngx-formly. </li>
+          </ul>
+
+          <strong>Academic Projects</strong>
+          <ul>
+            <li>Developed employee management system using ASP.NET Web API, AWS RDS, and Angular 10.0.</li>
+            <li>Developed a patient registration system using React, NodeJS and Express.</li>
+            <li>Worked on the angular frontend of a machine learning project using Python, Scikit-learn, and flask.</li>
+            <li>Developed a UI of a realtor’s portfolio website using HTML5, CSS3, and flexbox.</li>
+            <li>Worked as a team member in developing documents like Software Requirements Specifications & Software Design Description.</li>
+          </ul>
+   
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 text-center"></div>
+      <div class="col-md-9 main-text">
+        <hr class="text-muted" />
+        <ul>
+          <li>
+            <h6>
+              M.Sc. Renewable Energy Engineering, Institute of Engineering,
+              Tribhuvan University Nepal (2012)
+            </h6>
+          </li>
+          <li>
+            <h6>
+              B. Eng. Electronics Engineering, Purbanchal University, Nepal
+              (2010)
+            </h6>
+          </li>
+        </ul>
+
+        <hr class="text-muted" />
+      </div>
+    </div>
+
+    <div class="row my-3">
+      <div class="col-md-3 main-text">
+        <h3 class="text-dark underline">Experience</h3>
+      </div>
+      <div class="col-md-9 main-text">
+        <h4>Front-end Developer (Co-op) - Xello</h4>
+        <p class="my-0">
+          Centennial College - WIMTACH, Toronto, ON,
+          <i>April 2021 - December 2021</i>
+        </p>
+        <small class="text-muted"
+          ><i
+            >WIMTACH - Wearable Interactive, Mobile Technologies and Access
+            Centre in Health - A division of Centennial College for applied
+            research and development with industry partners</i
+          ></small
+        >
+        <ul class="my-2">
+          <li>
+            Worked as a frontend developer to migrate an Angular JS application
+            to angular 2+ application that involves migrating Angular JS
+            services, filters, controllers, and directives.
+          </li>
+          <li>
+            Performed functional testing on the migrated feature and wrote unit
+            test on Jest for more than 80% test coverage.
+          </li>
+          <li>
+            Participated in product demo and technical demo with client and
+            project team.
+          </li>
+          <li>
+            Performed PR reviews and provided feedback to the fellow developers.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row my-3">
+      <div class="col-md-3 main-text"></div>
+      <div class="col-md-9 main-text">
+        <h4>Front-end Developer (Co-op) - Alpha</h4>
+        <p class="my-0">
+          Centennial College - WIMTACH, Toronto, ON,
+          <i>June 2020 - January 2021</i>
+        </p>
+        <ul class="my-2">
+          <li>
+            Worked as front-end developer to upgrade a legacy web application
+            using HTML, CSS, TypeScript, Bootstrap, Flexbox, Angular 9, Angular
+            Material, and JSON.
+          </li>
+          <li>
+            Responsible for developing reusable services and UI components.
+          </li>
+          <li>
+            Implemented features using user stories, UI mockups, and confluence
+            documents.
+          </li>
+          <li>
+            Integrated angular services with the back-end system using Restful
+            API.
+          </li>
+          <li>
+            Performed bug fixes and code reviews and prepare technical
+            documentation.
+          </li>
+          <li>
+            Collaborated with team members to ensure the quality of the
+            codebase.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row my-3">
+      <div class="col-md-3 main-text">
+        <h3 class="text-dark underline">Tech Stack</h3>
+      </div>
+      <div class="col-md-9 main-text"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 main-text tech-grid">
+
+        <div class="card p-1" style="width: 15rem; height: auto" *ngFor="let techStack of techStacks">
+          <img class="w-50 mx-auto d-block my-3" [src]="techStack" alt="Card image cap" />
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

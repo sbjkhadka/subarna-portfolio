@@ -11,3 +11,13 @@ a.download-button:hover {
     transition: color 0.5s linear;
     transition: background-color 1s linear;
 }
+
+div.main-text {
+      @media (max-width: 767px) {
+          padding-left: 40px;
+          padding-right: 40px;
+          a {
+              margin-top: 32px;
+          }
+        }
+}
