@@ -9,6 +9,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './header/navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
+import { ContactFormComponent } from './common-components/contact-form/contact-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [					
@@ -18,11 +20,13 @@ import { AboutComponent } from './about/about.component';
       PortfolioComponent,
       FooterComponent,
       NavbarComponent,
-      AboutComponent
+      AboutComponent,
+      ContactFormComponent
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

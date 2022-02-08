@@ -1,0 +1,41 @@
+<div class="container pt-3">
+  <div class="row">
+    <div class="col-md-8">
+      <form [formGroup]="contactForm">
+
+        <div class="form-group my-3">
+          <label for="name" class="text-muted"><small>Name</small></label>
+          <input type="text" id="name" class="form-control bg-dark text-muted border-dark" formControlName="name" />
+        </div>
+
+        <div class="form-group my-3">
+          <label for="email" class="text-muted"><small>Email</small></label>
+          <input type="email" id="email" class="form-control bg-dark text-muted border-dark" formControlName="email" />
+        </div>
+
+        <div class="form-group my-3">
+          <label for="subject" class="text-muted"><small>Subject</small></label>
+          <input type="text" id="subject" class="form-control bg-dark text-muted border-dark" formControlName="subject" />
+        </div>
+
+        <div class="form-group my-3">
+          <label for="message" class="text-muted"><small>Message</small></label>
+          <textarea id="message" class="form-control bg-dark text-muted border-dark" formControlName="message" rows="6"></textarea>
+        </div>
+        
+        <button class="btn form-control btn-dark" (click)="sendMessage()">SEND</button>
+        <small></small>
+      </form>
+    </div>
+    <div class="col-md-4 text-muted">
+      <div class="contact-box">
+        <h3>Contact Details</h3>
+        <p class="m-0">Subarna B Khadka</p>
+        <p class="m-0">Toronto</p>
+        <p class="m-0">Ontario, M1M 1T2</p>
+        <p class="m-0">647 - 914 - 7091</p>  
+        <p class="m-0">khadka.subarnabijaya@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</div>

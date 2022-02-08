@@ -1,14 +1,17 @@
 .container-fluid {
   .row {
     .contact-form {
-      height: 200px;
+      height: 600px;
       position: relative;
       background-color: #191919;
       color: #FFF;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: start;
       i.up-arrow {
         position: absolute;
         bottom: -20px;
-        left: 49%;
         background-color: #FFF;
         z-index: 2;
         padding: 15px;
