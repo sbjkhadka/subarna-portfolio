@@ -48,6 +48,10 @@ div.tech-grid {
   @media (max-width: 597px) {
     grid-template-columns: repeat(1, auto);
   }
+  div {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .row {

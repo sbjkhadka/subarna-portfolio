@@ -19,6 +19,14 @@ export class ResumeComponent implements OnInit {
     'https://miro.medium.com/max/1000/1*TGwJKcxY8kGEenRLLedeLw.png',
     'https://simg.nicepng.com/png/small/223-2233246_heroku-logo-salesforce-heroku.png',
     'https://miro.medium.com/max/512/1*9U1toerFxB8aiFRreLxEUQ.png'];
+
+    skillLevels = [
+      { skill: 'Angular', value: '90' },
+      { skill: 'React', value: '80' },
+      { skill: 'Node', value: '80' },
+      { skill: 'SQL', value: '90' },
+      { skill: 'Spring', value: '70' },
+    ];
   constructor() { }
 
   ngOnInit() {

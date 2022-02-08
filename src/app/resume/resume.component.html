@@ -2,44 +2,64 @@
   <div class="container py-3">
     <div class="row">
       <div class="col-md-3 main-text">
-        <h3 class="text-dark underline">{{ 'Education' | uppercase }}</h3>
+        <h3 class="text-dark underline">{{ "Education" | uppercase }}</h3>
       </div>
       <div class="col-md-9 main-text">
         <h4>Centennial College, <br />Toronto, ON</h4>
         <p><i>Software Engineering Technology (2021)</i> &bull; GPA: 4.4/4.5</p>
-      
-          <ul class="text-muted">
-            <li>Recipent of CCSAI Academic Merit Scholarship (2021)</li>
-            <li>Recipent of Centennial College Retiree’s Association Memorial Scholarship for achieving high academic standings (2020)</li>
-          </ul>
 
-          <strong>Relevant Courses</strong>
-          <ul class="relavant-courses">
-            <li> Web Interface Design</li>
-            <li> Client-Side Web Development</li>
-            <li> Web Application Development</li>
-            <li> Object Oriented Programming</li>
-            <li> Data Structure and Algorithms</li>
-            <li> API Engineering </li>
-          </ul>
+        <ul class="text-muted">
+          <li>Recipent of CCSAI Academic Merit Scholarship (2021)</li>
+          <li>
+            Recipent of Centennial College Retiree’s Association Memorial
+            Scholarship for achieving high academic standings (2020)
+          </li>
+        </ul>
 
-          <strong>Capstone Project</strong>
-          <ul>
-            <li>Project Title: Grocery List Generator (MEAN Stack)</li>
-            <li>Contributed to developing API endpoints and designing database using Mongo DB Compass, 
-              developed services and components in the angular frontend using HTTP Client, 
-              Angular Material, Angular routing, RxJS, and ngx-formly. </li>
-          </ul>
+        <strong>Relevant Courses</strong>
+        <ul class="relavant-courses">
+          <li>Web Interface Design</li>
+          <li>Client-Side Web Development</li>
+          <li>Web Application Development</li>
+          <li>Object Oriented Programming</li>
+          <li>Data Structure and Algorithms</li>
+          <li>API Engineering</li>
+        </ul>
 
-          <strong>Academic Projects</strong>
-          <ul>
-            <li>Developed employee management system using ASP.NET Web API, AWS RDS, and Angular 10.0.</li>
-            <li>Developed a patient registration system using React, NodeJS and Express.</li>
-            <li>Worked on the angular frontend of a machine learning project using Python, Scikit-learn, and flask.</li>
-            <li>Developed a UI of a realtor’s portfolio website using HTML5, CSS3, and flexbox.</li>
-            <li>Worked as a team member in developing documents like Software Requirements Specifications & Software Design Description.</li>
-          </ul>
-   
+        <strong>Capstone Project</strong>
+        <ul>
+          <li>Project Title: Grocery List Generator (MEAN Stack)</li>
+          <li>
+            Contributed to developing API endpoints and designing database using
+            Mongo DB Compass, developed services and components in the angular
+            frontend using HTTP Client, Angular Material, Angular routing, RxJS,
+            and ngx-formly.
+          </li>
+        </ul>
+
+        <strong>Academic Projects</strong>
+        <ul>
+          <li>
+            Developed employee management system using ASP.NET Web API, AWS RDS,
+            and Angular 10.0.
+          </li>
+          <li>
+            Developed a patient registration system using React, NodeJS and
+            Express.
+          </li>
+          <li>
+            Worked on the angular frontend of a machine learning project using
+            Python, Scikit-learn, and flask.
+          </li>
+          <li>
+            Developed a UI of a realtor’s portfolio website using HTML5, CSS3,
+            and flexbox.
+          </li>
+          <li>
+            Worked as a team member in developing documents like Software
+            Requirements Specifications & Software Design Description.
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -68,7 +88,7 @@
 
     <div class="row my-3">
       <div class="col-md-3 main-text">
-        <h3 class="text-dark underline">{{ 'Experience' | uppercase }}</h3>
+        <h3 class="text-dark underline">{{ "Experience" | uppercase }}</h3>
       </div>
       <div class="col-md-9 main-text">
         <h4>Front-end Developer (Co-op) - Xello</h4>
@@ -143,18 +163,55 @@
 
     <div class="row my-3">
       <div class="col-md-3 main-text">
-        <h3 class="text-dark underline">{{ 'Tech Stack' | uppercase }}</h3>
+        <h3 class="text-dark underline">{{ "Skills" | uppercase }}</h3>
+      </div>
+      <div class="col-md-9 main-text"></div>
+    </div>
+
+    <div class="row my-3 d-flex justify-content-around px-3">
+      <div class="col-md-9 main-text border rounded skill-bar">
+        <div class="my-3" *ngFor="let skillLevel of skillLevels">
+          <div class="progress" style="height: 20px">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+              role="progressbar"
+              [style.width]="skillLevel.value + '%'"
+              aria-valuenow="0"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center px-3"
+              >
+                <strong>{{ skillLevel.skill | uppercase }}</strong
+                ><span>{{ skillLevel.value }}%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row my-3">
+      <div class="col-md-3 main-text">
+        <h3 class="text-dark underline">{{ "Tech Stack" | uppercase }}</h3>
       </div>
       <div class="col-md-9 main-text"></div>
     </div>
 
     <div class="row">
       <div class="col-md-12 main-text tech-grid">
-
-        <div class="card p-1" style="width: 15rem; height: auto" *ngFor="let techStack of techStacks">
-          <img class="w-50 mx-auto d-block my-3" [src]="techStack" alt="Card image cap" />
+        <div
+          class="card p-1"
+          style="width: 15rem; height: auto"
+          *ngFor="let techStack of techStacks"
+        >
+          <img
+            class="w-50 mx-auto d-block my-3"
+            [src]="techStack"
+            alt="Card image cap"
+          />
         </div>
-
       </div>
     </div>
   </div>
