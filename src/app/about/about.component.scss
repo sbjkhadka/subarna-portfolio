@@ -1,10 +1,11 @@
-a.download-button {
+span.download-button {
     background-color: #D3D3D3;
     color: #000;
     font-weight: 600;
+    cursor: pointer;
 }
 
-a.download-button:hover {
+span.download-button:hover {
     background-color: #000;
     color: #FFF;
     font-weight: 600;
