@@ -13,7 +13,6 @@ export class HeaderComponent {
 
   timeOfDay(): string {
     const hour = Number(new Date().getHours());
-    console.log(hour);
     if(hour >= 4 && hour <= 11) {
       return 'Morning';
     } else if (hour >= 12 && hour <=16) {
