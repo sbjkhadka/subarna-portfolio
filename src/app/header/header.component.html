@@ -4,12 +4,12 @@
     <section class="banner">
         <div class="container">
             <div class="line-break"><br><br><br><br><br><br><br><br><br><br><br><br></div>
-            <h1>
+            <h1 @fade>
                 Hello World <br class="hide-mob">
                 Have a <span>good</span> {{timeOfDay()}}!
             </h1>
-            <h3>A Toronto based Full Stack Dev</h3>
-            <div class="social-icons" *ngIf="social">
+            <h3 @fade>A Toronto based Full Stack Dev</h3>
+            <div @fade class="social-icons" *ngIf="social">
                 <a [href] = "social.github" class="text-light"><i class="fa fa-6x fa-github-square"></i></a>
                 <a [href] = "social.linkedIn" class="text-light"><i class="fa fa-6x fa-linkedin-square"></i></a>
                 <a [href] = "social.instagram" class="text-light"><i class="fa fa-6x fa-instagram"></i></a>

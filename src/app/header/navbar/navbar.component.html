@@ -1,12 +1,12 @@
 <header [ngClass]="scrolling ? 'header-scrolling':'header-default'">
   <div class="container">
-    <h2 routerLink="/home" fragment="home">sbj<span>Khadka</span></h2>
+    <h2 routerLink="/home" fragment="home" @fade>sbj<span>Khadka</span></h2>
     <nav>
-        <a routerLink="/home" fragment="home">Home</a>
-        <a routerLink="/home" fragment="about">About</a>
-        <a routerLink="/home" fragment="resume">Resume</a>
-        <a routerLink="/home" fragment="portfolio">Projects</a>
-        <a routerLink="/home" fragment="footer">Contact</a>
+        <a @fade routerLink="/home" fragment="home">Home</a>
+        <a @fade routerLink="/home" fragment="about">About</a>
+        <a @fade routerLink="/home" fragment="resume">Resume</a>
+        <a @fade routerLink="/home" fragment="portfolio">Projects</a>
+        <a @fade routerLink="/home" fragment="footer">Contact</a>
     </nav>
     
   </div>
