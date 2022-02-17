@@ -18,7 +18,8 @@ export class ResumeComponent implements OnInit {
     'https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png',
     'https://miro.medium.com/max/1000/1*TGwJKcxY8kGEenRLLedeLw.png',
     'https://simg.nicepng.com/png/small/223-2233246_heroku-logo-salesforce-heroku.png',
-    'https://miro.medium.com/max/512/1*9U1toerFxB8aiFRreLxEUQ.png'];
+    'https://miro.medium.com/max/512/1*9U1toerFxB8aiFRreLxEUQ.png',
+    'https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png?20200221181224'];
 
     skillLevels = [
       { skill: 'Angular', value: '90' },
