@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ContactDetail } from '../Models/contact-details.interface';
 import { DownloadService } from '../services/download.service';
 
 @Component({
@@ -6,11 +7,10 @@ import { DownloadService } from '../services/download.service';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
-export class AboutComponent implements OnInit {
-  constructor(private downloadService: DownloadService) { }
+export class AboutComponent {
+  @Input() contactDetails: ContactDetail;
 
-  ngOnInit() {
-  }
+  constructor(private downloadService: DownloadService) { }
 
   returnBlob(res: any): Blob {
     return new Blob([res], { type: 'application/pdf'});

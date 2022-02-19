@@ -12,7 +12,7 @@
         I have 1+ years of experience working as a frontend developer in different projects of Xello
         and Alpha.</p>
 
-        <p> I am an amateur chef, husband, and dog lover. I love to go on a long walk whenever possible.</p> 
+        <p> I am an amateur chef, a husband, and a dog lover. I love to go on a long walk whenever possible.</p> 
         <p>I am a recent graduate of Software Engineering from Centennial College. Currently, I am enjoying my most awaited break 
           from my College life and looking forward to working in a reputed company as a Full Stack Developer or a Front end Developer.
         </p>
@@ -33,11 +33,11 @@
     <div class="col-md-3"></div>
     <div class="col-md-5 text-left text-secondary main-text">
       <h3 class="text-light">Contact Details</h3>
-      <p class="m-0">Subarna B Khadka</p>
-      <p class="m-0">Toronto</p>
-      <p class="m-0">Ontario, M1M 1T2</p>
-      <p class="m-0">647 - 914 - 7091</p>  
-      <p class="m-0">khadka.subarnabijaya@gmail.com</p>
+      <p class="m-0">{{ contactDetails.name }}</p>
+      <p class="m-0">{{ contactDetails.city }}</p>
+      <p class="m-0">{{ contactDetails.province }}, {{ contactDetails.postalCode }}</p>
+      <p class="m-0">{{ contactDetails.phone }}</p>  
+      <p class="m-0">{{ contactDetails.email }}</p>
     </div>
     <div class="col-md-4 main-text">
       <span href="#" (click)="downloadResume()" download class="text-decoration-none border rounded p-3 download-button bg-muted">
@@ -45,7 +45,5 @@
       </span>
     </div>
   </div>
-  
-
 </div>
 </div>

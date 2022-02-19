@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ContactDetail } from './Models/contact-details.interface';
 import { Social } from './Models/social.interface';
 
 @Component({
@@ -15,4 +16,13 @@ export class AppComponent {
     { name: 'facebook', link: 'https://www.facebook.com/', icon: 'fa-facebook-square' },
     { name: 'twitter', link: 'https://www.twitter.com/', icon: 'fa-twitter-square' }
   ];
+
+  contactDetails: ContactDetail = {
+    name: 'Subarna B Khadka',
+    city: 'Toronto',
+    province: 'Ontario',
+    postalCode: 'M1M 1T2',
+    phone: '647-914-7091',
+    email: 'khadka.subarnabijaya@gmail.com'
+  }
 }
