@@ -9,12 +9,8 @@
 
   <div class="row">
     <div class="col-md-12 social-section">
-      <div class="social-icons" *ngIf="social">
-        <a [href] = "social.github" class="text-muted"><i class="fa fa-6x fa-github-square"></i></a>
-        <a [href] = "social.linkedIn" class="text-muted"><i class="fa fa-6x fa-linkedin-square"></i></a>
-        <a [href] = "social.instagram" class="text-muted"><i class="fa fa-6x fa-instagram"></i></a>
-        <a [href] = "social.facebook" class="text-muted"><i class="fa fa-facebook-square"></i></a>
-        <a [href] = "social.twitter" class="text-muted"><i class="fa fa-6x fa-twitter-square"></i></a>
+      <div class="social-icons" *ngIf="socials">
+        <app-social-icon *ngFor="let social of socials" [link]="social" section="footer"></app-social-icon>
       </div>
       <div class="copyright text-muted">
         Copyright &copy; {{year}} {{name}}

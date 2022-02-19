@@ -12,6 +12,7 @@ import { ContactFormComponent } from './common-components/contact-form/contact-f
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SocialIconComponent } from './common-components/social-icon/social-icon.component';
 
 @NgModule({
   declarations: [					
@@ -22,14 +23,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       FooterComponent,
       NavbarComponent,
       AboutComponent,
-      ContactFormComponent
+      ContactFormComponent,
+    SocialIconComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,7 +10,7 @@ import { Social } from '../Models/social.interface';
 })
 export class HeaderComponent {
 
-  @Input() social: Social = {};
+  @Input() socials: Social[];
   constructor() { }
 
   timeOfDay(): string {

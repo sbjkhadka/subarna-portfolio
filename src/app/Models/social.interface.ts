@@ -1,7 +1,5 @@
 export interface Social {
-    github?: string;
-    linkedIn?: string;
-    instagram?: string;
-    facebook?: string;
-    twitter?: string;
+    name: string;
+    link: string;
+    icon: string;
 }

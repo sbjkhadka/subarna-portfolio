@@ -7,7 +7,7 @@ import { Social } from '../Models/social.interface';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-  @Input() social: Social = {};
+  @Input() socials: Social[];
   year = new Date().getFullYear();
   name = 'Subarna';
   constructor() { }
