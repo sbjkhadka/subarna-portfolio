@@ -1,0 +1,15 @@
+    <div
+          class="d-flex justify-content-around align-items-center"
+        >
+          <a [href]="project.link" class="image-container">
+            <img [src]="project.src" alt="Card image" />
+            <div class="overlay">
+              <div class="text p-1 d-flex flex-column justify-content-around align-items-center text-muted">
+                <p>{{ project.language }}</p>
+                <i class="fa fa-link"></i>
+                <p>{{ project.description }}</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        

@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SocialIconComponent } from './common-components/social-icon/social-icon.component';
+import { MyProjectComponent } from './portfolio/my-project/my-project.component';
 
 @NgModule({
   declarations: [					
@@ -24,7 +25,8 @@ import { SocialIconComponent } from './common-components/social-icon/social-icon
       NavbarComponent,
       AboutComponent,
       ContactFormComponent,
-    SocialIconComponent
+      SocialIconComponent,
+      MyProjectComponent
    ],
   imports: [
     BrowserModule,

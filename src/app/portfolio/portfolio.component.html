@@ -10,7 +10,8 @@
     <div class="row">
       <div class="col-md-12 main-text tech-grid">
         <!-- card -->
-        <div
+        <app-my-project *ngFor="let project of projects" [project]="project"></app-my-project>
+        <!-- <div
           *ngFor="let project of projects"
           class="d-flex justify-content-around align-items-center"
         >
@@ -24,7 +25,7 @@
               </div>
             </div>
           </a>
-        </div>
+        </div> -->
       </div>
     </div>
     <!-- <div class="row">
