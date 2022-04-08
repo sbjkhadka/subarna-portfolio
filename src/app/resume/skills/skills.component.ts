@@ -11,6 +11,7 @@ export class SkillsComponent implements OnInit {
   @ViewChild('canvas', { static: true }) canvas: ElementRef<HTMLCanvasElement>;
   context: CanvasRenderingContext2D;
   @Input() skill: SkillLevel;
+  @ViewChild('techName', { static: true }) techName: ElementRef;
 
   constructor() { }
 
@@ -25,7 +26,7 @@ export class SkillsComponent implements OnInit {
     this.context.beginPath()
     this.context.arc(100, 100, 70, 0, 2 * Math.PI);
     this.context.lineWidth = 1;
-    this.context.strokeStyle = '#898492';
+    this.context.strokeStyle = this.skill.color;
     this.context.stroke();
 
     // Inner text
@@ -33,7 +34,7 @@ export class SkillsComponent implements OnInit {
     this.context.font = 'bold 30px Arial';
     this.context.textBaseline = 'middle';
     this.context.textAlign = 'center';
-    this.context.fillStyle = '#12002F';
+    this.context.fillStyle = this.skill.color;
     this.context.fillText(`${this.skill.value.toString()}%`, this.canvas.nativeElement.width / 2, this.canvas.nativeElement.height / 2);
     this.context.stroke();
 
@@ -41,8 +42,11 @@ export class SkillsComponent implements OnInit {
     this.context.beginPath();
     this.context.arc(100, 100, 70, 0, (this.skill.value / 100) * 2 * Math.PI);
     this.context.lineWidth = 20;
-    this.context.strokeStyle = '#12002F';
+    this.context.strokeStyle = this.skill.color;
     this.context.stroke();
+
+    // Tech Name
+    this.techName.nativeElement.style.color = this.skill.color;
   }
 
 }
