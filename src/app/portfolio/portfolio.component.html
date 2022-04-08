@@ -2,7 +2,7 @@
   <div class="container py-3">
     <div class="row my-3">
       <div class="col-md-3 main-text">
-        <h3 class="text-dark underline">{{'My projects' | uppercase}}</h3>
+        <h3 class="text-dark underline">{{ "My projects" | uppercase }}</h3>
       </div>
       <div class="col-md-9 main-text"></div>
     </div>
@@ -10,28 +10,11 @@
     <div class="row">
       <div class="col-md-12 main-text tech-grid">
         <!-- card -->
-        <app-my-project *ngFor="let project of projects" [project]="project"></app-my-project>
-        <!-- <div
+        <app-my-project
           *ngFor="let project of projects"
-          class="d-flex justify-content-around align-items-center"
-        >
-          <a [href]="project.link" class="image-container">
-            <img [src]="project.src" alt="Card image" />
-            <div class="overlay">
-              <div class="text p-1 d-flex flex-column justify-content-around align-items-center text-muted">
-                <p>{{ project.language }}</p>
-                <i class="fa fa-link"></i>
-                <p>{{ project.description }}</p>
-              </div>
-            </div>
-          </a>
-        </div> -->
+          [project]="project"
+        ></app-my-project>
       </div>
     </div>
-    <!-- <div class="row">
-      <div class="col-md-12">
-        <iframe src="https://www.juicer.io/api/feeds/subarnabj/iframe?per=10" frameborder="0" style="width: 100%;height:500px"></iframe>
-      </div>
-    </div> -->
   </div>
 </div>

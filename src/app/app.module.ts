@@ -14,20 +14,22 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SocialIconComponent } from './common-components/social-icon/social-icon.component';
 import { MyProjectComponent } from './portfolio/my-project/my-project.component';
+import { SkillsComponent } from './resume/skills/skills.component';
 
 @NgModule({
-  declarations: [					
+  declarations: [
     AppComponent,
-      HeaderComponent,
-      ResumeComponent,
-      PortfolioComponent,
-      FooterComponent,
-      NavbarComponent,
-      AboutComponent,
-      ContactFormComponent,
-      SocialIconComponent,
-      MyProjectComponent
-   ],
+    HeaderComponent,
+    ResumeComponent,
+    PortfolioComponent,
+    FooterComponent,
+    NavbarComponent,
+    AboutComponent,
+    ContactFormComponent,
+    SocialIconComponent,
+    MyProjectComponent,
+    SkillsComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

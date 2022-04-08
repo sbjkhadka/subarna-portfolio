@@ -1,0 +1,17 @@
+div.wrapper {
+  border: 1px solid gray;
+  border-radius: 5px;
+  div {
+    height: 20%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img {
+      height: 25px;
+    }
+    p {
+      color: #12002f;
+    }
+  }
+}
