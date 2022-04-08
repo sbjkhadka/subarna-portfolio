@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SkillLevel } from '../Models/skill-levels.interface';
 
 @Component({
   selector: 'app-resume',
@@ -21,13 +22,13 @@ export class ResumeComponent implements OnInit {
     'https://miro.medium.com/max/512/1*9U1toerFxB8aiFRreLxEUQ.png',
     'https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png?20200221181224'];
 
-    skillLevels = [
-      { skill: 'Angular', value: '90' },
-      { skill: 'React', value: '80' },
-      { skill: 'Node', value: '80' },
-      { skill: 'SQL', value: '90' },
-      { skill: 'Spring', value: '70' },
-    ];
+  skillLevels: SkillLevel[] = [
+    { skill: 'Angular', value: 90, image: 'https://angular.io/assets/images/logos/angular/angular.png' },
+    { skill: 'React', value: 80, image: 'https://www.pngitem.com/pimgs/m/664-6644509_icon-react-js-logo-hd-png-download.png' },
+    { skill: 'Node', value: 80, image: 'https://miro.medium.com/max/1000/1*TGwJKcxY8kGEenRLLedeLw.png' },
+    { skill: 'SQL', value: 90, image: 'https://e7.pngegg.com/pngimages/105/17/png-clipart-microsoft-azure-sql-database-microsoft-sql-server-cloud-computing-blue-text.png' },
+    { skill: 'Spring', value: 70, image: 'https://cdn.freebiesupply.com/logos/large/2x/spring-3-logo-png-transparent.png' },
+  ];
   constructor() { }
 
   ngOnInit() {
