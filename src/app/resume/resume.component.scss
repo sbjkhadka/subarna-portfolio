@@ -34,6 +34,25 @@ div.main-text {
 div.skill-bar {
   box-shadow: 1px 1px 18px gray;
 }
+div.skill-grid {
+  padding: 2em;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: auto;
+  grid-gap: 2em;
+  @media (max-width: 1399px) {
+    grid-template-columns: repeat(4, auto);
+  }
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(3, auto);
+  }
+  @media (max-width: 991px) {
+    grid-template-columns: repeat(2, auto);
+  }
+  @media (max-width: 597px) {
+    grid-template-columns: repeat(1, auto);
+  }
+}
 
 .relavant-courses {
   display: grid;
