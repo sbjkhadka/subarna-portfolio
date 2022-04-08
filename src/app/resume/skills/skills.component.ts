@@ -15,24 +15,17 @@ export class SkillsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.context = this.canvas.nativeElement.getContext('2d') as CanvasRenderingContext2D;
     this.createCanvas();
   }
 
   private createCanvas(): void {
-    this.context = this.canvas.nativeElement.getContext('2d') as CanvasRenderingContext2D;
+
     // Base circle
     this.context.beginPath()
     this.context.arc(100, 100, 70, 0, 2 * Math.PI);
-    this.context.lineWidth = 20;
+    this.context.lineWidth = 1;
     this.context.strokeStyle = '#898492';
-    this.context.stroke();
-
-
-    // progress circle
-    this.context.beginPath()
-    this.context.arc(100, 100, 70, 0, (this.skill.value / 100) * 2 * Math.PI);
-    this.context.lineWidth = 20;
-    this.context.strokeStyle = '#12002F';
     this.context.stroke();
 
     // Inner text
@@ -42,6 +35,13 @@ export class SkillsComponent implements OnInit {
     this.context.textAlign = 'center';
     this.context.fillStyle = '#12002F';
     this.context.fillText(`${this.skill.value.toString()}%`, this.canvas.nativeElement.width / 2, this.canvas.nativeElement.height / 2);
+    this.context.stroke();
+
+    // progress circle
+    this.context.beginPath();
+    this.context.arc(100, 100, 70, 0, (this.skill.value / 100) * 2 * Math.PI);
+    this.context.lineWidth = 20;
+    this.context.strokeStyle = '#12002F';
     this.context.stroke();
   }
 
