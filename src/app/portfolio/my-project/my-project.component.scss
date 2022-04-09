@@ -5,7 +5,7 @@ div {
   height: 200px;
   width: 200px;
   border-radius: 5px;
-  a.image-container {
+  div.image-container {
     position: relative;
     img {
       display: block;
@@ -35,10 +35,10 @@ div {
       }
     }
   }
-  a.image-container:hover div.overlay {
+  div.image-container:hover div.overlay {
     opacity: 1;
   }
-  a.image-container:hover div.text {
+  div.image-container:hover div.text {
     background-color: #191919;
     transition: background-color 0.5s linear;
   }
