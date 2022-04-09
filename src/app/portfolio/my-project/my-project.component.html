@@ -1,15 +1,21 @@
-    <div
-          class="d-flex justify-content-around align-items-center"
-        >
-          <a [href]="project.link" class="image-container">
-            <img [src]="project.src" alt="Card image" />
-            <div class="overlay">
-              <div class="text p-1 d-flex flex-column justify-content-around align-items-center text-muted">
-                <p>{{ project.language }}</p>
-                <i class="fa fa-link"></i>
-                <p>{{ project.description }}</p>
-              </div>
-            </div>
+<div class="d-flex justify-content-around align-items-center">
+  <div class="image-container">
+    <img [src]="project.src" alt="Card image" />
+    <div class="overlay">
+      <div
+        class="text p-1 d-flex flex-column justify-content-around align-items-center text-muted"
+      >
+        <p>{{ project.language }}</p>
+        <p class="d-flex justify-content-around align-items-center w-100">
+          <a *ngIf="project.github" [href]="project.github" class="text-muted">
+            <i class="fa fa-github-square"></i>
           </a>
-        </div>
-        
+          <a *ngIf="project.link" [href]="project.link" class="text-muted">
+            <i class="fa fa-link"></i>
+          </a>
+        </p>
+        <p>{{ project.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
