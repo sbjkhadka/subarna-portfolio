@@ -8,7 +8,6 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TechStackComponent implements OnInit {
 
   @Input() techStack: string;
-  constructor() { }
 
   ngOnInit() {
   }
