@@ -5,11 +5,8 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './tech-stack.component.html',
   styleUrls: ['./tech-stack.component.scss']
 })
-export class TechStackComponent implements OnInit {
+export class TechStackComponent {
 
   @Input() techStack: string;
-
-  ngOnInit() {
-  }
 
 }
