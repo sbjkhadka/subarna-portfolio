@@ -1,49 +1,51 @@
 <div class="w-100 bg-dark text-light py-3">
   <div class="container py-3">
-  <div class="row">
-    <div class="col-md-3 text-center">
-      <img src="../../assets/images/profile.jpg" alt="Profile Image" class="w-50 rounded mx-auto d-block border my-3">
-    </div>
-    <div class="col-md-9 main-text">
-      <h3>About me</h3>
-      <div class="text-secondary">
-        <p> Hello &bull; Hola  &bull; Namaste &bull; Salaam &bull; nǐ hǎo &bull; Annyeong Haseyo!  </p>
-        <p> I am a Toronto Based Full Stack developer focussing on MEAN stack and keen on MERN stack and Spring framework.
-        I have 1+ years of experience working as a frontend developer in different projects of Xello
-        and Alpha.</p>
-
-        <p> I am an amateur chef, a husband, and a dog lover. I love to go on a long walk whenever possible.</p> 
-        <p>I am a recent graduate of Software Engineering from Centennial College. Currently, I am enjoying my most awaited break 
-          from my College life and looking forward to working in a reputed company as a Full Stack Developer or a Front end Developer.
-        </p>
-
-        <hr>
-        <p class="font-italic">Bonjour</p>
-        <p class="font-italic">Je suis un développeur Full Stack basé à Toronto qui se concentre sur la pile MEAN et qui aime la pile MERN et le framework Spring.  
-        J'ai plus d'un an d'expérience en tant que développeur frontend dans différents projets de Xello et Alpha.</p> 
-        <p class="font-italic">Je suis un chef amateur, un mari et un amoureux des chiens. J'aime faire de longues promenades dès que possible.</p>
-        <p class="font-italic">Je suis un récent diplômé en génie logiciel du Centennial College. 
-          Actuellement, je profite de ma pause la plus attendue de ma vie universitaire et j'ai hâte de travailler 
-          dans une entreprise réputée en tant que développeur Full Stack ou développeur front-end.</p>
+    <div class="row">
+      <div class="col-md-3 text-center">
+        <img
+          src="../../assets/images/profile.jpg"
+          alt="Profile Image"
+          class="w-50 rounded mx-auto d-block border my-3"
+        />
       </div>
-
+      <div class="col-md-9 main-text">
+        <h3>About me</h3>
+        <div class="text-secondary">
+          <div *ngFor="let about of aboutTexts; let j = index">
+            <p>
+              <span *ngFor="let salutation of about.salutations; let i = index"
+                ><span *ngIf="i !== 0">&nbsp;&bull;&nbsp;</span
+                >{{ salutation }}</span
+              >
+            </p>
+            <p *ngFor="let text of about.texts">{{ text }}</p>
+            <hr *ngIf="j < aboutTexts.length - 1" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-5 text-left text-secondary main-text">
+        <h3 class="text-light">Contact Details</h3>
+        <p class="m-0">{{ contactDetails.name }}</p>
+        <p class="m-0">{{ contactDetails.city }}</p>
+        <p class="m-0">
+          {{ contactDetails.province }}, {{ contactDetails.postalCode }}
+        </p>
+        <p class="m-0">{{ contactDetails.phone }}</p>
+        <p class="m-0">{{ contactDetails.email }}</p>
+      </div>
+      <div class="col-md-4 main-text">
+        <span
+          href="#"
+          (click)="downloadResume()"
+          download
+          class="text-decoration-none border rounded p-3 download-button bg-muted"
+        >
+          Download Resume
+        </span>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-5 text-left text-secondary main-text">
-      <h3 class="text-light">Contact Details</h3>
-      <p class="m-0">{{ contactDetails.name }}</p>
-      <p class="m-0">{{ contactDetails.city }}</p>
-      <p class="m-0">{{ contactDetails.province }}, {{ contactDetails.postalCode }}</p>
-      <p class="m-0">{{ contactDetails.phone }}</p>  
-      <p class="m-0">{{ contactDetails.email }}</p>
-    </div>
-    <div class="col-md-4 main-text">
-      <span href="#" (click)="downloadResume()" download class="text-decoration-none border rounded p-3 download-button bg-muted">
-        Download Resume
-      </span>
-    </div>
-  </div>
-</div>
 </div>
