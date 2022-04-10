@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SocialIconComponent } from './common-components/social-icon/social-icon.component';
 import { MyProjectComponent } from './portfolio/my-project/my-project.component';
 import { SkillsComponent } from './resume/skills/skills.component';
+import { TechStackComponent } from './resume/tech-stack/tech-stack.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SkillsComponent } from './resume/skills/skills.component';
     ContactFormComponent,
     SocialIconComponent,
     MyProjectComponent,
-    SkillsComponent
+    SkillsComponent,
+    TechStackComponent
   ],
   imports: [
     BrowserModule,
