@@ -15,7 +15,7 @@ export class ResumeComponent implements OnInit {
     'https://brandlogos.net/wp-content/uploads/2016/06/bootstrap-logo-vector-download.jpg',
     'https://pbs.twimg.com/profile_images/1473756532827246593/KRgw2UkV_400x400.jpg',
     'https://blogs.incyclesoftware.com/hubfs/Git%20Logo.jpg',
-    'https://www.pngitem.com/pimgs/m/664-6644509_icon-react-js-logo-hd-png-download.png',
+    'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png',
     'https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png',
     'https://miro.medium.com/max/1000/1*TGwJKcxY8kGEenRLLedeLw.png',
     'https://simg.nicepng.com/png/small/223-2233246_heroku-logo-salesforce-heroku.png',
