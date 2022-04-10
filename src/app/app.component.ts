@@ -53,4 +53,7 @@ export class AppComponent {
     }
   ];
 
+  profileImage: string = "../../assets/images/profile.jpg";
+  coverImage: string = "../../assets/images/my_cover.jpg";
+
 }

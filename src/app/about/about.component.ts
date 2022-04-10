@@ -11,6 +11,7 @@ import { DownloadService } from '../services/download.service';
 export class AboutComponent {
   @Input() contactDetails: ContactDetail;
   @Input() aboutTexts: AboutText[];
+  @Input() profileImage: string;
 
   constructor(private downloadService: DownloadService) { }
 
