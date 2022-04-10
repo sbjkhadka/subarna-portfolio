@@ -53,6 +53,7 @@ export class AppComponent {
     }
   ];
 
+  // Replace with s3 link later
   profileImage: string = "../../assets/images/profile.jpg";
   coverImage: string = "../../assets/images/my_cover.jpg";
 
