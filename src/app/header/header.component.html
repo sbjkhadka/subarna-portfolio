@@ -1,18 +1,28 @@
 <app-navbar class="fixed-top"></app-navbar>
 
 <main>
-    <section class="banner">
-        <div class="container">
-            <div class="line-break"><br><br><br><br><br><br><br><br><br><br><br><br></div>
-            <h1 @fade>
-                Hello World <br class="hide-mob">
-                Have a <span>good</span> {{timeOfDay()}}!
-            </h1>
-            <h3 @fade>A Toronto based Full Stack Dev</h3>
-            <div @fade class="social-icons" *ngIf="socials">
-                <app-social-icon *ngFor="let social of socials" [link]="social" section="header"></app-social-icon>
-            </div>
-        </div>
-        <i class="down-arrow fa fa-chevron-down rounded-circle" routerLink="/home" fragment="about"></i>
-    </section>
+  <section class="banner">
+    <div class="container">
+      <div class="line-break">
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </div>
+      <h1 @fade>
+        {{ headerText.greeting | titlecase }} <br class="hide-mob" />
+        Have a <span>good</span> {{ timeOfDay() }}!
+      </h1>
+      <h3 @fade>{{ headerText.tagline }}</h3>
+      <div @fade class="social-icons" *ngIf="socials">
+        <app-social-icon
+          *ngFor="let social of socials"
+          [link]="social"
+          section="header"
+        ></app-social-icon>
+      </div>
+    </div>
+    <i
+      class="down-arrow fa fa-chevron-down rounded-circle"
+      routerLink="/home"
+      fragment="about"
+    ></i>
+  </section>
 </main>

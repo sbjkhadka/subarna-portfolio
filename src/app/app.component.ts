@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ContactDetail } from './Models/contact-details.interface';
+import { HeaderText } from './Models/header-text.interface';
 import { Social } from './Models/social.interface';
 
 @Component({
@@ -25,4 +26,8 @@ export class AppComponent {
     phone: '647-914-7091',
     email: 'khadka.subarnabijaya@gmail.com'
   }
+  headerText: HeaderText = {
+    greeting: 'hello world',
+    tagline: 'A Toronto based Full Stack Dev'
+  };
 }
