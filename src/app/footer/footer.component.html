@@ -2,18 +2,25 @@
   <div class="row">
     <div class="col-md-12 contact-form">
       <app-contact-form [contactDetails]="contactDetails"></app-contact-form>
-      <i class="up-arrow fa fa-chevron-up rounded-circle text-muted" routerLink="/home" fragment="home"></i>
-
+      <i
+        class="up-arrow fa fa-chevron-up rounded-circle text-muted"
+        routerLink="/home"
+        fragment="home"
+      ></i>
     </div>
   </div>
 
   <div class="row">
     <div class="col-md-12 social-section">
       <div class="social-icons" *ngIf="socials">
-        <app-social-icon *ngFor="let social of socials" [link]="social" section="footer"></app-social-icon>
+        <app-social-icon
+          *ngFor="let social of socials"
+          [link]="social"
+          section="footer"
+        ></app-social-icon>
       </div>
       <div class="copyright text-muted">
-        Copyright &copy; {{year}} {{name}}
+        Copyright &copy; {{ year }} {{ name | titlecase }}
       </div>
     </div>
   </div>

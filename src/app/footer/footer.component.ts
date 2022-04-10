@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ContactDetail } from '../Models/contact-details.interface';
 import { Social } from '../Models/social.interface';
 
@@ -10,8 +10,7 @@ import { Social } from '../Models/social.interface';
 export class FooterComponent {
   @Input() socials: Social[];
   @Input() contactDetails: ContactDetail;
+  @Input() name: string;
   year = new Date().getFullYear();
-  name = 'Subarna';
-  constructor() { }
 
 }
