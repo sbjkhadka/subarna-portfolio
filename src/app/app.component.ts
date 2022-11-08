@@ -48,9 +48,9 @@ export class AppComponent {
       language: 'english',
       salutations: ['Hello', 'Hola', 'Namaste', 'Salaam', 'nǐ hǎo', 'Annyeong Haseyo!'],
       texts: [
-        'I am a Toronto Based Full Stack developer focussing on MEAN stack and keen on MERN stack and Spring framework.I have 1+ years of experience working as a frontend developer in different projects of Xello and Alpha.',
-        'I am an amateur chef, a husband, and a dog lover. I love to go on a long walk whenever possible.',
-        'I am a recent graduate of Software Engineering from Centennial College. Currently, I am enjoying my most awaited break from my College life and looking forward to working in a reputed company as a Full Stack Developer or a Front end Developer.'
+        'I am a Toronto Based Full Stack developer focussing on MEAN stack and keen on MERN stack and Spring framework. I have 2+ years of experience working as a frontend developer in different projects.',
+        'I am an amateur chef, a husband, and a dog lover. I love to go on a hike whenever possible.',
+        'I am a recent graduate of Software Engineering from Centennial College. Currently, I am working as a Software engineer at Mastercard'
       ]
     }, {
       language: 'french',
@@ -58,7 +58,7 @@ export class AppComponent {
       texts: [
         "Je suis un développeur Full Stack basé à Toronto qui se concentre sur la pile MEAN et qui aime la pile MERN et le framework Spring. J'ai plus d'un an d'expérience en tant que développeur frontend dans différents projets de Xello et Alpha.",
         "Je suis un chef amateur, un mari et un amoureux des chiens. J'aime faire de longues promenades dès que possible.",
-        "Je suis un récent diplômé en génie logiciel du Centennial College. Actuellement, je profite de ma pause la plus attendue de ma vie universitaire et j'ai hâte de travailler dans une entreprise réputée en tant que développeur Full Stack ou développeur front-end."
+        "Je suis un récent diplômé en génie logiciel du Centennial College. Actuellement, je travaille comme ingénieur logiciel chez Mastercard."
       ]
     }
   ];
