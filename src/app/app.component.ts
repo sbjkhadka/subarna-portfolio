@@ -12,7 +12,7 @@ import { Social } from './Models/social.interface';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'subarna-portfolio';
+  title = 'subarna-portfolio'; // title of project
 
   socialIds: Social[] = [
     { name: 'github', link: 'https://github.com/sbjkhadka', icon: 'fa-github-square' },
